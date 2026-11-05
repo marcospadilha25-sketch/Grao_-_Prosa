@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+    <html lang="pt-br" data-bs-theme="light">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Meu Projeto</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#inicio">MeuProjeto</a>
+                <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                    </ul>
+                    <button id="btnTema" class="btn btn-outline-secondary ms-lg-3">Modo escuro</button>
+                </div>
+            </div>
+        </nav>
+        <header id="inicio" class="hero text-center text-white d-flex align-items-center">
+        <div class="container">
+        <h1 class="display-3 fw-bold">Nome do Projeto</h1>
+        <p class="lead">Escreva aqui uma frase de impacto.</p>
+        <a href="#contato" class="btn btn-warning btn-lg">Quero participar</a>
+        </div>
+        </header>
+            <section class="py-4 text-center bg-body-secondary">
+            <div class="container">
+                <h2 class="h5">Faltam:</h2>
+                <p id="contagem" class="display-6 fw-bold mb-0"></p>
+            </div>
+        </section>
+        <section id="sobre" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">O que oferecemos</h2>
+                <div class="row g-4">
+                    <div class="col-12 col-md-4">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">Item 1</h5>
+                                <p class="card-text">Descricao curta do item.</p>
+                                <button class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#modalItem1">Ver mais</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">Item 1</h5>
+                                <p class="card-text">Descricao curta do item.</p>
+                                <button class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#modalItem1">Ver mais</button>
+                            </div>
+                        </div>
+                    </div><div class="col-12 col-md-4">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">Item 1</h5>
+                                <p class="card-text">Descricao curta do item.</p>
+                                <button class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#modalItem1">Ver mais</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="modal fade" id="modalItem1" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+        <div class="modal-header">
+        <h5 class="modal-title">Item 1</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">Texto completo com os detalhes do item.</div>
+        </div>
+        </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
